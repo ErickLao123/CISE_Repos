@@ -1,26 +1,61 @@
+/* Global styles for the entire application */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Form styles */
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 30em;
-    }
-    .formItem {
-    padding: 1em;
-    margin: 1em 0;
-    flex-grow: 1;
-    }
-    formTextArea {
-        @extend .formItem;
-        min-height: 8em;
-        }
-        .arrayItem {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: stretch;
-        }
-        .buttonItem {
-        width: 3rem;
-        height: 3rem;
-        flex-grow: 0;
-        font-size: 1.5em;
-        }
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+}
+
+.formItem {
+  padding: 1em;
+  margin: 1em 0;
+  flex-grow: 1;
+}
+
+formTextArea {
+  @extend .formItem;
+  min-height: 8em;
+}
+
+.arrayItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.buttonItem {
+  width: 3rem;
+  height: 3rem;
+  flex-grow: 0;
+  font-size: 1.5em;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333; /* Darker shade for the table header */
+}
+
+td a {
+  color: #00f; /* Link color inside the table */
+}
+
+td a:hover {
+  color: #ff0; /* Hover color for links */
+}
